@@ -1,4 +1,3 @@
-# echo-client.py
 import random
 import primo
 import socket

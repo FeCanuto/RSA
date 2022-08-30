@@ -1,4 +1,3 @@
-import threading
 from diffie_hellman import dh_client
 import rsa
 
@@ -20,7 +19,7 @@ n = p*q  # compute N
 y = rsa.totient(p)  # computa o totient de P
 x = rsa.totient(q)  # computa o totient de Q
 totient_de_N = x*y  # computa o totient de N
-e = rsa.co_primo(totient_de_N, value)  # generate E
+e = rsa.co_primo(totient_de_N, value)
 public_key = (n, e) # Chave pública 
 text_cipher = rsa.cipher(text, e, n) # Criptografa Mensagem
 d = rsa.calculando_chave_privada(totient_de_N, e) # Chave Privada

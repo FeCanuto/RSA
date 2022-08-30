@@ -9,7 +9,7 @@ def totient(number):
     '''
     Calcula o totiente do numero primo: para um número natural n, 
     a função phi (totient) é definida como sendo igual à quantidade de números menores que n, 
-    coprimos com respeito a ele. Se x é primo a função phi(x) = x - 1.
+    coprimos com respeito a ele. Se number é primo a função phi(x) = number - 1.
     '''
     if (primo.verificar_primo(number)):
         return number-1
@@ -45,7 +45,7 @@ def mod(a, b):  # Função modular
         return c
 
 
-def cipher(words, e, n):  # get the words and compute the cipher
+def cipher(words, e, n):  # obter as palavras e calcular a cifra
     '''
     Cifra um texto
     '''
